@@ -9,3 +9,4 @@ Games
 - Aim Test
 - Scroll Test
 - Navi Test
+(all of this was human made by the way)
