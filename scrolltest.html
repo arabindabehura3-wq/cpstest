@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Speed Test</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <h1>Scroll Speed Test</h1>
+<div class="sidebar">
+  <h2>Games</h2>
+  <button onclick="location.href='cpstest.html'">CPS Test</button>
+  <button onclick="location.href='reactiontest.html'">Reaction Time</button>
+  <button onclick="location.href='navitest.html'">Navi Test</button>
+  <button onclick="location.href='memotest.html'">Memory Test</button>
+  <button onclick="location.href='aimtest.html'">Tracking Test</button>
+  <button onclick="location.href='scrolltest.html'">Scroll Test</button>
+</div>
+<div class="container">
+
+  <p>Scroll as fast as you can</p>
+
+  <div class="stats">
+    <div class="stat">
+      <div>Time</div>
+      <div class="stat-value" id="time">5.0s</div>
+    </div>
+    <div class="stat">
+      <div>Scrolls</div>
+      <div class="stat-value" id="scrolls">0</div>
+    </div>
+    <div class="stat">
+      <div>Speed</div>
+      <div class="stat-value" id="speed">0/s</div>
+    </div>
+  </div>
+
+  <div class="click-area" id="scrollArea">
+    Scroll here to start
+  </div>
+
+<div class="controls">
+    <button class="control-btn" id="resetBtn">Reset</button>
+</div>
+</div>
+
+<script src="js/scrolltest.js"></script>
+<footer>
+  <p>Created by AB</p>
+</footer>
+</body>
+</html>

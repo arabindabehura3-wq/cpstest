@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reaction Time Game</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<h1>Reaction Time Test</h1>
+<div class="sidebar">
+  <h2>Games</h2>
+  <button onclick="location.href='cpstest.html'">CPS Test</button>
+  <button onclick="location.href='reactiontest.html'">Reaction Time</button>
+  <button onclick="location.href='navitest.html'">Navi Test</button>
+  <button onclick="location.href='memotest.html'">Memory Test</button>
+  <button onclick="location.href='aimtest.html'">Tracking Test</button>
+  <button onclick="location.href='scrolltest.html'">Scroll Test</button>
+</div>
+  <div class="container">
+    <p class="subtitle">Wait for green, then click as fast as you can.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-label">Status</span>
+        <span class="stat-value" id="time">Ready</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Reaction</span>
+        <span class="stat-value" id="clicks">--</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Best</span>
+        <span class="stat-value" id="cps">--</span>
+      </div>
+    </div>
+
+    <button class="click-area" id="clickArea">Click to start</button>
+
+    <div class="controls">
+      <select id="durationSelect" aria-label="Select difficulty">
+        <option value="easy">Easy</option>
+        <option value="normal" selected>Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button class="control-btn" id="resetBtn">Reset</button>
+    </div>
+
+    <p class="hint">Do not click too early. Wait until the button turns green.</p>
+  </div>
+<footer>
+  <p>Created by AB</p>
+</footer>
+  <script src="js/reactiontest.js"></script>
+</body>
